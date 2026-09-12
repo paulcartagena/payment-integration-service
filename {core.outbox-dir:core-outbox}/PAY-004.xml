@@ -1,1 +1,0 @@
-<PaymentMessage><Header><MessageId>PAY-004</MessageId><Channel>DIGITAL</Channel><GeneratedAt>2026-09-12T22:43:49Z</GeneratedAt></Header><Body><TransactionId>PAY-004</TransactionId><CustomerRef>CUST-77</CustomerRef><Amount currency="GBP">220.75</Amount><ValueDate>2026-09-12</ValueDate></Body></PaymentMessage>
