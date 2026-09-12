@@ -19,7 +19,7 @@ public class CoreXmlSender {
     private final XmlMapper xmlMapper;
     private final Path outboxDir;
 
-    public CoreXmlSender(@Value("{core.outbox-dir:core-outbox}") String outboxDir) {
+    public CoreXmlSender(@Value("${core.outbox-dir:core-outbox}") String outboxDir) {
         this.xmlMapper = new XmlMapper();
         this.outboxDir = Path.of(outboxDir);
     }
