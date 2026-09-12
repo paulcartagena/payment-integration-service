@@ -8,6 +8,9 @@ import com.paulcartagena.paymentintegration.repository.PaymentRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.OffsetDateTime;
+import java.util.List;
+
 @Service
 public class PaymentService {
 
@@ -34,5 +37,10 @@ public class PaymentService {
         payment.setStatus(PaymentStatus.SENT);
 
         return paymentRepository.save(payment);
+    }
+
+    @Transactional(readOnly = true)
+    public List<Payment> search(String customerId, OffsetDateTime from, OffsetDateTime to) {
+        return paymentRepository.search(customerId, from, to);
     }
 }

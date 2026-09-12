@@ -1,0 +1,1 @@
+<PaymentMessage><Header><MessageId>PAY-003</MessageId><Channel>DIGITAL</Channel><GeneratedAt>2026-09-12T22:39:28Z</GeneratedAt></Header><Body><TransactionId>PAY-003</TransactionId><CustomerRef>CUST-99</CustomerRef><Amount currency="EUR">300.00</Amount><ValueDate>2026-08-20</ValueDate></Body></PaymentMessage>
