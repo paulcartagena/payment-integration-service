@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: payment-integration-service
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
