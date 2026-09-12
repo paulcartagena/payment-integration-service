@@ -10,3 +10,6 @@ spring:
   h2:
     console:
       enabled: true
+
+core:
+  outbox-dir: core-outbox
